@@ -1,0 +1,9 @@
+sudo insmod firewall.ko protocol='tcp' src_ip='192.168.23.129' dest_ip='192.168.23.128' src_port=23 dest_port=23 action='drop'
+
+
+sudo rmmod firewall
+
+
+lsmod | grep firewall
+dmesg | tail
+
